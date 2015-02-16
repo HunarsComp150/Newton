@@ -22,7 +22,7 @@ int main()
 {
 	// All variable initialized
 	double x0, x1, y, looparound = 1;
-	const int epsilon = 0.00001;
+	const int epsilon = 0.0001;
 
 	// Program Info
 	cout << "***************************************************" << endl;
