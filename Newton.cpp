@@ -89,5 +89,9 @@ int main()
 			cout << "Difference between x1 and x0 is " << setprecision(3) << x1 - x0 << endl;
 		}
 	} while (!(x1 - x0 <= epsilon && x1 - x0 >= -epsilon));
+	cout << "**************************************************\n\n\n" << endl;
+	
+	cout << "**************************************************" << endl;
+	cout << "Square Root of " << y << "is approximately "<< setprecision(3) << x1;
 	cout << "**************************************************" << endl;
 }
