@@ -73,9 +73,8 @@ int main()
 		if (looparound == 1)
 		{
 			x1 = (x0 + (y / x0)) / 2;
-			cout << "x0=" << x0 << endl;
-			cout << "x1=" << x1 << endl;
-			cout << "y=" << y << endl;
+			cout << "x0=" << setprecision(9) << x0 << endl;
+			cout << "x1=" << setprecision(9) << x1 << endl;
 			cout << "Difference between x1 and x0 is " << setprecision(3) << x1 - x0 << endl;
 			--looparound;
 		}
@@ -83,15 +82,15 @@ int main()
 		{
 			x0 = x1;
 			x1 = (x0 + (y / x0)) / 2;
-			cout << "x0=" << x0 << endl;
-			cout << "x1=" << x1 << endl;
-			cout << "y=" << y << endl;
-			cout << "Difference between x1 and x0 is " << setprecision(3) << x1 - x0 << endl;
+			cout << "x0=" << setprecision(9) << x0 << endl;
+			cout << "x1=" << setprecision(9) << x1 << endl;
+			cout << "Difference between x1 and x0 is " << setprecision(9) << x1 - x0 << endl;
 		}
-	} while (!(x1 - x0 <= epsilon && x1 - x0 >= -epsilon));
+	} while (!(x1 - x0 == epsilon));
 	cout << "**************************************************\n\n\n" << endl;
 	
 	cout << "**************************************************" << endl;
-	cout << "Square Root of " << y << "is approximately "<< setprecision(3) << x1 << endl;
+	cout << "Square Root of " << y << "is approximately "<< x1<< endl;
 	cout << "**************************************************" << endl;
+	return 0;
 }
