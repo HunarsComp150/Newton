@@ -92,6 +92,6 @@ int main()
 	cout << "**************************************************\n\n\n" << endl;
 	
 	cout << "**************************************************" << endl;
-	cout << "Square Root of " << y << "is approximately "<< setprecision(3) << x1;
+	cout << "Square Root of " << y << "is approximately "<< setprecision(3) << x1 << endl;
 	cout << "**************************************************" << endl;
 }
